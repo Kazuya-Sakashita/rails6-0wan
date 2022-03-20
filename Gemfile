@@ -29,7 +29,14 @@ gem 'devise', '~> 4.8', '>= 4.8.1'
 gem 'carrierwave', '~> 2.2', '>= 2.2.2'
 gem 'nokogiri', '~> 1.13', '>= 1.13.3'
 gem 'kaminari', '~> 1.2', '>= 1.2.2'
-
+gem 'dotenv-rails', '>= 2.7.6'
+gem 'omniauth-github', '~> 2.0'
+gem 'omniauth', '>= 2.0.4'
+gem 'omniauth-rails_csrf_protection', '~> 1.0'
+gem 'pundit', '~> 1.1'
+gem 'aasm', '~> 5.2'
+gem 'ransack', '~> 2.4', '>= 2.4.2'
+gem 'sidekiq', '~> 6.3', '>= 6.3.1'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
@@ -39,6 +46,7 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'rubocop', '~> 1.26'
   gem 'pry-rails', '~> 0.3.9'
+  gem 'rspec-rails', '~> 5.0', '>= 5.0.2'
 end
 
 group :development do

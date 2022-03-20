@@ -1,0 +1,24 @@
+<div class="p-8 lg:w-2/3 mx-auto">
+  <%= form_with model: @pet, local: true do |form| %>
+    <p><%= form.label :name %><br>
+      <%= form.text_field :name,class:"bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white", placeholder:"名前を入力ください" %>
+    </p>
+
+    <p class="my-3"><%= form.label :age %><br>
+      <%= form.text_field :agec ,class:"bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white", placeholder:"年齢を入力ください"  %>
+    </p>
+
+    <p class="my-3"><%= form.label :description %><br>
+      <%= form.text_area :description ,class:"bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white", placeholder:"性格など説明をお願い致します。"%>
+    </p>
+
+    <p class="my-3"><%= form.label :image1 %><br>
+      <%= form.text_field :image1 ,class:"bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white", placeholder:"画像の選択をお願いします。"%>
+    </p>
+
+
+    <p class ="my-5"><%= form.submit '投稿' ,class: "text-white py-2 px-4 uppercase rounded bg-pink-500 hover:bg-pink-600 shadow hover:shadow-lg font-medium transition transform hover:-translate-y-0.5" %>
+    </p>
+
+  <% end %>
+</div>
