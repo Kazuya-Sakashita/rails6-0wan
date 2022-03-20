@@ -37,6 +37,7 @@ gem 'pundit', '~> 1.1'
 gem 'aasm', '~> 5.2'
 gem 'ransack', '~> 2.4', '>= 2.4.2'
 gem 'sidekiq', '~> 6.3', '>= 6.3.1'
+gem 'mini_magick', '~> 4.11'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
