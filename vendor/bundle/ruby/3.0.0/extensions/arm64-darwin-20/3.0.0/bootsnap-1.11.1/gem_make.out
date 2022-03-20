@@ -1,0 +1,15 @@
+current directory: /Users/sakashitakazuya/Desktop/work/Portfolio/rails6-0wan/vendor/bundle/ruby/3.0.0/gems/bootsnap-1.11.1/ext/bootsnap
+/Users/sakashitakazuya/.rbenv/versions/3.0.1/bin/ruby -I /Users/sakashitakazuya/.rbenv/versions/3.0.1/lib/ruby/site_ruby/3.0.0 -r ./siteconf20220320-86523-fnq0ly.rb extconf.rb
+creating Makefile
+
+current directory: /Users/sakashitakazuya/Desktop/work/Portfolio/rails6-0wan/vendor/bundle/ruby/3.0.0/gems/bootsnap-1.11.1/ext/bootsnap
+make DESTDIR\= clean
+
+current directory: /Users/sakashitakazuya/Desktop/work/Portfolio/rails6-0wan/vendor/bundle/ruby/3.0.0/gems/bootsnap-1.11.1/ext/bootsnap
+make DESTDIR\=
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.bundle
+
+current directory: /Users/sakashitakazuya/Desktop/work/Portfolio/rails6-0wan/vendor/bundle/ruby/3.0.0/gems/bootsnap-1.11.1/ext/bootsnap
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 bootsnap.bundle ./.gem.20220320-86523-a779n5/bootsnap
