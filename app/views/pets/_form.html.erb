@@ -1,0 +1,56 @@
+<div class="p-8 lg:w-2/3 mx-auto">
+  <%= form_with model: @pet, local: true do |form| %>
+    <p><%= form.label "カテゴリ" %><br>
+      <%= form.text_field :category,class:"bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white", placeholder:"犬、猫などのカテゴリを入力してください。" %>
+    </p>
+
+    <p><%= form.label "動物種類" %><br>
+      <%= form.text_field :animal_type,class:"bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white", placeholder:"チワワ、ハスキーなどの種類を入力してください。" %>
+    </p>
+
+    <p><%= form.label :name %><br>
+      <%= form.text_field :name,class:"bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white", placeholder:"名前を入力ください" %>
+    </p>
+
+    <p class="my-3"><%= form.label :age %><br>
+      <%= form.text_field :age ,class:"bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white", placeholder:"年齢を入力ください"  %>
+    </p>
+
+    <p class="my-3"><%= form.label "性別" %><br>
+      <%= form.text_field :gender ,class:"bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white", placeholder:"性別を入力ください。（例）オスなど"  %>
+    </p>
+
+    <p class="my-3"><%= form.label "去勢" %><br>
+      <%= form.text_field :castration ,class:"bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white", placeholder:"去勢あり、なしを入力ください"  %>
+    </p>
+
+    <p class="my-3"><%= form.label "利用可能領域" %><br>
+      <%= form.text_field :avairable_area ,class:"bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white", placeholder:"関西地方、中国地方など利用可能地域を入力ください"%>
+    </p>
+
+    <p class="my-3"><%= form.label :description %><br>
+      <%= form.text_area :description ,class:"bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white", placeholder:"性格など説明をお願い致します"%>
+    </p>
+
+    <p class="my-3"><%= form.label :image1 %><br>
+      <%= form.file_field :image1 ,class:"bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white", placeholder:"画像の選択をお願いします。"%>
+    </p>
+
+    <p class="my-3"><%= form.label :image2 %><br>
+      <%= form.file_field :image2 ,class:"bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white", placeholder:"画像の選択をお願いします。"%>
+    </p>
+
+    <p class="my-3"><%= form.label :image3 %><br>
+      <%= form.file_field :image3 ,class:"bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white", placeholder:"画像の選択をお願いします。"%>
+    </p>
+
+    <p class="my-3"><%= form.label :image4 %><br>
+      <%= form.file_field :image4 ,class:"bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white", placeholder:"画像の選択をお願いします。"%>
+    </p>
+
+
+    <p class ="my-5"><%= form.submit '投稿' ,class: "text-white py-2 px-4 uppercase rounded bg-pink-500 hover:bg-pink-600 shadow hover:shadow-lg font-medium transition transform hover:-translate-y-0.5" %>
+    </p>
+
+  <% end %>
+</div>
