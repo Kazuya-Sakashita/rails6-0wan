@@ -13,7 +13,11 @@
     </p>
 
     <p class="my-3"><%= form.label :age %><br>
-      <%= form.text_field :agec ,class:"bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white", placeholder:"年齢を入力ください"  %>
+      <%= form.text_field :age ,class:"bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white", placeholder:"年齢を入力ください"  %>
+    </p>
+
+    <p class="my-3"><%= form.label "性別" %><br>
+      <%= form.text_field :gender ,class:"bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white", placeholder:"性別を入力ください。（例）オスなど"  %>
     </p>
 
     <p class="my-3"><%= form.label "去勢" %><br>

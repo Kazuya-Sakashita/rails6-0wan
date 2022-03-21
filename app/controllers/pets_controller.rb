@@ -21,7 +21,7 @@ class PetsController < ApplicationController
 
   def update
     @pet = Pet.find(params[:id])
-    if @pet.update(pet_params)
+    if @pet.update!(pet_params)
       redirect_to root_path
     else
       render :index
@@ -44,7 +44,6 @@ class PetsController < ApplicationController
   private
 
   def pet_params
-    # params.require(:pet).permit(:name, :age, :castration, :category, :character, :avairable_area, :animal_type, :description, :image1, :image2, :image3, :image4, :gender)
-    params.require(:pet).permit(:name, :description, :image1, :image2, :image3, :image4, :castration, :category, :character, :avairable_area, :animal_type, :gender)
+    params.require(:pet).permit(:name, :age, :castration, :category, :character, :avairable_area, :animal_type, :description, :image1, :image2, :image3, :image4, :gender)
   end
 end
